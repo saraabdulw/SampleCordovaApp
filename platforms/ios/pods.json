@@ -1,0 +1,12 @@
+{
+    "declarations": {},
+    "sources": {},
+    "libraries": {
+        "MoEngage-iOS-SDK": {
+            "name": "MoEngage-iOS-SDK",
+            "type": "podspec",
+            "spec": "~> 5.0.0",
+            "count": 1
+        }
+    }
+}

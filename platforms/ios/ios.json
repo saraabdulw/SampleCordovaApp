@@ -1,0 +1,54 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "MoEngage": [
+            {
+              "xml": "<dict><key>MoEngage_APP_ID</key><string>DAO6UGZ73D9RTK8B5W96TPYN</string></dict>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"MoEngage\"><param name=\"ios-package\" value=\"MoECordova\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-moengage": {
+      "APP_ID": "DAO6UGZ73D9RTK8B5W96TPYN",
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-moengage.MoECordova",
+      "file": "plugins/cordova-plugin-moengage/www/MoECordova.js",
+      "pluginId": "cordova-plugin-moengage",
+      "clobbers": [
+        "MoECordova"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-moengage": "5.0.1"
+  }
+}

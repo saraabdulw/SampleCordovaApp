@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-moengage" version="5.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>MoECordova</name>
+	<description>MoEngage SDK Plugin</description>
+	<js-module name="MoECordova" src="www/MoECordova.js">
+		<clobbers target="MoECordova"/>
+	</js-module>
+
+	<preference name="APP_ID"/>
+    <!-- Android Platform -->
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="MoEngage">
+				<param name="android-package" value="com.moengage.cordova.MoECordova"/>
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"/>
+		<framework custom="true" src="src/android/build-extras.gradle" type="gradleReference"/>
+		<source-file src="src/android/com/moengage/cordova/MoECordova.java" target-dir="src/com/moengage/cordova"/>
+		<source-file src="src/android/com/moengage/cordova/CordovaMessageListener.java" target-dir="src/com/moengage/cordova"/>
+		<source-file src="src/android/com/moengage/cordova/CordovaInAppListener.java" target-dir="src/com/moengage/cordova"/>
+	</platform>
+	<!-- iOS Platform -->
+	<platform name="ios">
+		<!-- Update APP ID in Info.plist -->
+		<config-file target="*-Info.plist" parent="MoEngage">
+    		<dict>
+        		<key>MoEngage_APP_ID</key>
+        		<string>$APP_ID</string>
+    		</dict>
+		</config-file>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="MoEngage">
+                <param name="ios-package" value="MoECordova"/>
+            </feature>
+        </config-file>
+        <!-- Cordova specific files -->
+        <header-file src="src/ios/MoEngage/MoECordova.h" />
+        <source-file src="src/ios/MoEngage/MoECordova.m" />
+        <header-file src="src/ios/MoEngage/AppDelegate+MoEngage.h" />
+        <source-file src="src/ios/MoEngage/AppDelegate+MoEngage.m" />
+
+        <!-- MoEngage iOS SDK files -->
+        <framework   src="MoEngage-iOS-SDK" type="podspec" spec="~> 5.0.0"/>
+    </platform>
+</plugin>

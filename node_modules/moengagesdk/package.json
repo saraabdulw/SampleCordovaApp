@@ -1,0 +1,36 @@
+{
+  "_from": "moengagesdk",
+  "_id": "moengagesdk@5.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-5ix7CmYxFJBnjU44ZvVfJ9o4u3YLl48tY1kUBfwaaFBujR56Y3XJqRor6IJxpFJMGdlFKCXZUMkVVlCiiKHkqg==",
+  "_location": "/moengagesdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "moengagesdk",
+    "name": "moengagesdk",
+    "escapedName": "moengagesdk",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/moengagesdk/-/moengagesdk-5.0.1.tgz",
+  "_shasum": "0d7d9547c30b8a9016254920530647aa6cb2cfc1",
+  "_spec": "moengagesdk",
+  "_where": "/Users/saraabdulwajid/Documents/sampleAppMoE",
+  "author": {
+    "name": "moengage"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "MoEngage Cordova SDK",
+  "license": "ISC",
+  "main": "MoECordova.js",
+  "name": "moengagesdk",
+  "version": "5.0.1"
+}
