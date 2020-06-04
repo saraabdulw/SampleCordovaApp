@@ -9,7 +9,7 @@
         "parents": {
           "MoEngage": [
             {
-              "xml": "<dict><key>MoEngage_APP_ID</key><string>DAO6UGZ73D9RTK8B5W96TPYN</string></dict>",
+              "xml": "<dict><key>MoEngage_APP_ID</key><string>Your app id</string></dict>",
               "count": 1
             }
           ]
@@ -32,7 +32,7 @@
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
     "cordova-plugin-moengage": {
-      "APP_ID": "DAO6UGZ73D9RTK8B5W96TPYN",
+      "APP_ID": "Your app id",
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },

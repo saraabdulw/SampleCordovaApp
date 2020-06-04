@@ -11,7 +11,7 @@
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
     "cordova-plugin-moengage": {
-      "APP_ID": "DAO6UGZ73D9RTK8B5W96TPYN",
+      "APP_ID": "Your app id",
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
